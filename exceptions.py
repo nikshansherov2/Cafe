@@ -5,7 +5,6 @@ def check_id_empl(id_empl):
     with open('dates/staff.csv', 'r') as f:
         reader = csv.reader(f, delimiter=';')
         for row in reader:
-            print(row[0])
             if row[0] == id_empl:
                 return True
             else:
