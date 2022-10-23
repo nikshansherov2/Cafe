@@ -38,6 +38,7 @@ def check_match(id_empl, id_table):
     with open('dates/match.csv', 'r') as f:
         reader = csv.reader(f, delimiter=';')
         for row in reader:
+            # print(row[1], row[2])
             if row[1] == id_empl and row[2] == id_table:
                 return True
             else:
