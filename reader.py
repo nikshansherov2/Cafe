@@ -31,6 +31,7 @@ def show_tables_of_empl(id_empl):
 
 def get_name(id_empl):
     with open('dates/staff.csv', encoding='utf-8') as s:
+        name = ''
         for i in s:
             temp = i.strip().split(';')
             if temp[0] == id_empl:
@@ -40,6 +41,7 @@ def get_name(id_empl):
 
 def get_number(id_table):
     with open('dates/tables.csv', encoding='utf-8') as s:
+        name = ''
         for i in s:
             temp = i.strip().split(';')
             if temp[0] == id_table:
